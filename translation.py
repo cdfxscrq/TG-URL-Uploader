@@ -1,6 +1,6 @@
 class Translation(object):
     START_TEXT = """This is an @multisource_bot.
-Source Code: https://github.com/Ashok2umar/AnyDLBot
+Source Code: https://github.com/Ashok2umar/multisourcebot
 © @multisource_bot"""
     RENAME_403_ERR = "Sorry. You are not permitted to rename this file."
     ABS_TEXT = " Please don't be selfish."
