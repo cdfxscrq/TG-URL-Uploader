@@ -3,7 +3,7 @@ cchardet
 aiodns
 beautifulsoup4
 git+git://github.com/google/chatbase-python.git
-hachoir
+hachoir-metadata
 numpy
 Pillow
 https://github.com/pyrogram/pyrogram/archive/asyncio.zip
