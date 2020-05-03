@@ -8,3 +8,6 @@ https://github.com/pyrogram/pyrogram/archive/asyncio.zip
 requests
 tgcrypto
 https://github.com/ytdl-org/youtube-dl/archive/master.zip
+pydrive
+pySmartDL
+hachoir
