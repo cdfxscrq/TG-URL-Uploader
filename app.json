@@ -49,7 +49,7 @@
     },
     "CHUNK_SIZE": {
       "description": "chunk size that should be used with requests",
-      "value": "",
+      "value": "128",
       "required": false
     },
     "HTTP_PROXY": {
