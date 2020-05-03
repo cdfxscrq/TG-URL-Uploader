@@ -25,7 +25,7 @@ else:
 from translation import Translation
 
 import pyrogram
-logging.getLogger("pyrogram").setLevel(logging.WARNING)
+logging.getLogger("pyrogram").setLevel(logging.INFO)
 
 from helper_funcs.chat_base import TRChatBase
 from helper_funcs.display_progress import progress_for_pyrogram
@@ -69,14 +69,17 @@ async def get_link(bot, update):
             message_id=a.message_id
         )
         end_one = datetime.now()
-        url = "https://openload.cc/api/upload{}.{}".format(str(update.from_user.id), str(download_extension))
-        max_days = "5"
+        #url = "https://transfer.sh/{}.{}".format(str(update.from_user.id), str(download_extension))
+        #url = "https://transfer.sh/{}".format(upload_name)
+        url = "https://openload.cc/api/upload"
+        #max_days = "7"
+        file=str("file=@") + after_download_file_name
         command_to_exec = [
             "curl","-F",file,url
             # "-H", 'Max-Downloads: 1',
-            "-H", 'Max-Days: 5', # + max_days + '',
-            "--upload-file", after_download_file_name,
-            url
+            #'Max-Days: 7', # + max_days + '',
+            #"--upload-file", after_download_file_name,
+            #url
         ]
         await bot.edit_message_text(
             text=Translation.UPLOAD_START,
