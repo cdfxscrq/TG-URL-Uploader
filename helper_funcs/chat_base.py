@@ -14,7 +14,7 @@ import os
 if bool(os.environ.get("WEBHOOK", False)):
     from sample_config import Config
 else:
-    from config import Config
+    from sample_config import Config
 
 # the Strings used for this "thing"
 from translation import Translation
@@ -32,4 +32,4 @@ def TRChatBase(chat_id, message_text, intent):
               user_id=chat_id,
               message=message_text,
               intent=intent)
-    resp = msg.send()
+    Response = msg.send()
