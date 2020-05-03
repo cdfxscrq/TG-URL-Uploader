@@ -12,12 +12,12 @@ import os
 import shutil
 import subprocess
 import time
-
+from helper_funcs.display_progress import humanbytes, progress_for_pyrogram
 # the secret configuration specific things
 if bool(os.environ.get("WEBHOOK", False)):
     from sample_config import Config
 else:
-    from config import Config
+    from sample_config import Config
 
 # the Strings used for this "thing"
 from translation import Translation
@@ -87,10 +87,12 @@ async def unzip(bot, update):
             )
             try:
                 command_to_exec = [
-                    "7z",
-                    "e",
-                    "-o" + extract_dir_path,
-                    saved_file_path
+                    "unzip",
+                    "-o",
+                    saved_file_path,
+                    # extract_dir_path,
+                    "-d",
+                    extract_dir_path
                 ]
                 # https://stackoverflow.com/a/39629367/4723940
                 logger.info(command_to_exec)
