@@ -10,4 +10,4 @@ tgcrypto
 https://github.com/ytdl-org/youtube-dl/archive/master.zip
 pydrive
 pySmartDL
-hachoir
+
