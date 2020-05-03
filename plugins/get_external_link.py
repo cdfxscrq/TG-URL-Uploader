@@ -13,6 +13,7 @@ import os
 import requests
 import subprocess
 import time
+import json
 
 # the secret configuration specific things
 if bool(os.environ.get("WEBHOOK", False)):
@@ -71,7 +72,7 @@ async def get_link(bot, update):
         url = "https://openload.cc/api/upload{}.{}".format(str(update.from_user.id), str(download_extension))
         max_days = "5"
         command_to_exec = [
-            "curl",
+            "curl","-F",file,url
             # "-H", 'Max-Downloads: 1',
             "-H", 'Max-Days: 5', # + max_days + '',
             "--upload-file", after_download_file_name,
