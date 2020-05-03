@@ -2,12 +2,12 @@ aiohttp
 beautifulsoup4
 git+git://github.com/google/chatbase-python.git
 hachoir
+pydrive
+pySmartDL
 numpy
 Pillow
 https://github.com/pyrogram/pyrogram/archive/asyncio.zip
 requests
 tgcrypto
 https://github.com/ytdl-org/youtube-dl/archive/master.zip
-pydrive
-pySmartDL
 
