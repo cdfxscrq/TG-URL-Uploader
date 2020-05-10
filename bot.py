@@ -28,11 +28,12 @@ if __name__ == "__main__" :
         root="plugins"
     )
     app = pyrogram.Client(
-        "AnyDLBot",
+        "multisource_bot",
         bot_token=Config.TG_BOT_TOKEN,
         api_id=Config.APP_ID,
         api_hash=Config.API_HASH,
         plugins=plugins
     )
-    Config.AUTH_USERS.add(7351948)
+    app.set_parse_mode("html")
+    Config.AUTH_USERS.add(965469378)
     app.run()
