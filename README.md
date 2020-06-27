@@ -1,6 +1,8 @@
 ## [AnyDLBot](https://telegram.dog/AnyDLBot) - Clone
 ---
 
+<a href="https://www.python.org/"><img alt="language" src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg"/></a>
+
 An Open Source ALL-In-One Telegram RoBot, that can do lot of things.
 
 **My Features**:
